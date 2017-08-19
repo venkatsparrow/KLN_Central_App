@@ -7,4 +7,7 @@
     <string name="password">Password</string>
     <string name="klncelogo">Klncelogo</string>
     <string name="signup">Sign up</string>
+
+    <string name="sidenavopen">Open</string>
+    <string name="sidenavclose">Close</string>
 </resources>

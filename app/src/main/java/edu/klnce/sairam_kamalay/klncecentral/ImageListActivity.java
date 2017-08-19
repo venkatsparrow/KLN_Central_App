@@ -1,16 +1,13 @@
 package edu.klnce.sairam_kamalay.klncecentral;
 
 import android.app.ProgressDialog;
-import android.content.Intent;
-import android.support.annotation.IntegerRes;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -26,7 +23,9 @@ public class ImageListActivity extends AppCompatActivity {
     private ListView lv;
     private ImageListAdapter adapter;
     private ProgressDialog progressDialog;
-    private FirebaseAuth fAuth = FirebaseAuth.getInstance();
+
+    private DrawerLayout mDrawerLayout;
+    private ActionBarDrawerToggle mToggle;
 
 
 
@@ -39,6 +38,14 @@ public class ImageListActivity extends AppCompatActivity {
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("please wait loading News...");
         progressDialog.show();
+
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.imagelistDrawer);
+        mToggle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.sidenavopen,R.string.sidenavclose);
+
+        mDrawerLayout.addDrawerListener(mToggle);
+        mToggle.syncState();
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         mDatabaseRef = FirebaseDatabase.getInstance().getReference(Mainpage.FB_DATABASE_PATH);
         mDatabaseRef.addValueEventListener(new ValueEventListener() {
@@ -65,21 +72,10 @@ public class ImageListActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main_menu,menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.logoutmenu){
-            fAuth.signOut();
-            Intent tologin = new Intent(ImageListActivity.this,MainActivity.class);
-            tologin.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-            startActivity(tologin);
+        if (mToggle.onOptionsItemSelected(item)){
+            return true;
         }
-
-
         return super.onOptionsItemSelected(item);
     }
 }

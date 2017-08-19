@@ -5,17 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
     tools:context="edu.klnce.sairam_kamalay.klncecentral.Mainpage">
 
     <Button
+        android:layout_marginTop="5sp"
+        style="@style/buttonstyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Browse image to upload"
         android:onClick="btnBrowse_Click" />
 
     <ImageView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_margin="20sp"
+        android:contentDescription="@string/app_name"
+        android:layout_width="250sp"
+        android:layout_height="250sp"
         android:layout_gravity="center"
         android:id="@+id/imageView"/>
 
@@ -23,17 +28,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txtImageName"
-        android:hint="Image name"/>
+        android:hint="Description"/>
 
 
 
     <Button
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        style="@style/buttonstyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Upload image"
         android:onClick="btnUpload_Click" />
 
     <Button
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        style="@style/buttonstyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="show list image"
