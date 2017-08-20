@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,7 +12,7 @@
         style="@style/buttonstyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Browse image to upload"
+        android:text="@string/browse_image"
         android:onClick="btnBrowse_Click" />
 
     <ImageView
@@ -28,7 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txtImageName"
-        android:hint="Description"/>
+        android:hint="@string/desc"/>
 
 
 
@@ -39,7 +38,7 @@
         style="@style/buttonstyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Upload image"
+        android:text="@string/uploadimg"
         android:onClick="btnUpload_Click" />
 
     <Button
@@ -49,7 +48,7 @@
         style="@style/buttonstyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="show list image"
+        android:text="@string/previousuploads"
         android:onClick="btnShowListImage_Click" />
 
 

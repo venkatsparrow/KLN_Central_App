@@ -10,4 +10,12 @@
 
     <string name="sidenavopen">Open</string>
     <string name="sidenavclose">Close</string>
+    <string name="browse_image">Browse image to upload</string>
+    <string name="desc">Description</string>
+    <string name="uploadimg">Upload image</string>
+    <string name="previousuploads">Previous Uploads</string>
+
+
+    <string name="imgname">Image Name</string>
+
 </resources>

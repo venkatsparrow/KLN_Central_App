@@ -81,6 +81,13 @@ public class ImageListActivity extends AppCompatActivity implements NavigationVi
         });
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (mToggle.onOptionsItemSelected(item)){
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -93,8 +100,6 @@ public class ImageListActivity extends AppCompatActivity implements NavigationVi
             startActivity(tolog);
             return true;
         }
-
-
         return false;
     }
 }

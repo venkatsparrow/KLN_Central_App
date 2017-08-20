@@ -18,10 +18,6 @@ import java.util.List;
 import static edu.klnce.sairam_kamalay.klncecentral.R.id.tvImageName;
 
 
-/**
- * Created by venkatsparrow on 14/08/17.
- */
-
 public class ImageListAdapter extends ArrayAdapter<imageUpload> {
     private Activity context;
     private int resource;
@@ -45,8 +41,6 @@ public class ImageListAdapter extends ArrayAdapter<imageUpload> {
         tvName.setText(listImage.get(position).getName());
         Glide.with(context).load(listImage.get(position).getUrl()).into(img);
         return v;
-
-
 
     }
 

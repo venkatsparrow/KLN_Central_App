@@ -12,7 +12,6 @@
         android:layout_gravity="center"
         android:layout_margin="5dp"
         card_view:cardCornerRadius="2dp"
-
         card_view:contentPadding="10dp">
 
         <LinearLayout
@@ -30,7 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
-                android:text="Image name"
+                android:text="@string/imgname"
                 android:textColor="@android:color/black"
                 android:background="@android:color/white"
                 android:textSize="18sp" />
