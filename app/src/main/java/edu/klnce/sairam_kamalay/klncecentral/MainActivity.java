@@ -66,8 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String mypassword = upassword.getText().toString().trim();
 
         progressDialog = new ProgressDialog(this);
-        progressDialog.setMessage("Logging in...");
-        progressDialog.show();
+
 
         if(TextUtils.isEmpty(myemail)){
             Toast.makeText(this,"Please enter email",Toast.LENGTH_LONG).show();
@@ -78,6 +77,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Toast.makeText(this,"Please enter password",Toast.LENGTH_LONG).show();
             return;
         }
+
+        progressDialog.setMessage("Logging in...");
+        progressDialog.show();
 
         mAuth.signInWithEmailAndPassword(myemail,mypassword)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {

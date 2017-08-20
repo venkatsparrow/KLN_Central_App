@@ -58,6 +58,11 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
             return;
         }
 
+        if(nupassword.length()<5){
+            Toast.makeText(this,"Weak Password",Toast.LENGTH_LONG).show();
+            return;
+        }
+
         mAuth.createUserWithEmailAndPassword(nuemail,nupassword)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
 
