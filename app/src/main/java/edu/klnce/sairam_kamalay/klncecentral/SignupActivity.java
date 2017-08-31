@@ -72,10 +72,12 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
                         {
                             Toast.makeText(SignupActivity.this,"Successfully Registered",Toast.LENGTH_LONG).show();
                             editTextemail.setText(null);
+                            editTextpassword.setText(null);
                         }
                         else{
                             Toast.makeText(SignupActivity.this,"Registration error",Toast.LENGTH_LONG).show();
                             editTextemail.setText(null);
+                            editTextpassword.setText(null);
                         }
                     }
                 });

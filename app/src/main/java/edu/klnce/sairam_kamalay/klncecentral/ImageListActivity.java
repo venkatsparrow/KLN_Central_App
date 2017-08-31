@@ -100,6 +100,16 @@ public class ImageListActivity extends AppCompatActivity implements NavigationVi
             startActivity(tolog);
             return true;
         }
+        else if(item.getItemId() == R.id.about_us){
+            Intent toaboutus = new Intent(this,About_us.class);
+            startActivity(toaboutus);
+            return true;
+        }
+        else if(item.getItemId() == R.id.busschedule){
+            Intent tobusschedule = new Intent(this,BusSchedule.class);
+            startActivity(tobusschedule);
+            return true;
+        }
         return false;
     }
 }

@@ -17,5 +17,6 @@
 
 
     <string name="imgname">Image Name</string>
+    <string name="aboutus"><u>About us</u>\n\nSurya\nSairam\nVenkat</string>
 
 </resources>
