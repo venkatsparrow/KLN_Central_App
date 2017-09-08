@@ -4,8 +4,6 @@
     <item android:id="@+id/sidenav_myacc"
         android:title="Department Staff"/>
 
-
-
     <item android:id="@+id/busschedule"
         android:title="Bus Schedule"/>
 
@@ -13,8 +11,9 @@
         android:title="Canteen"/>
 
 
-    <item android:id="@+id/sidenav_settings"
-        android:title="Settings"/>
+    <item android:id="@+id/sidenav_theme"
+        android:onClick="popupmenu"
+        android:title="Theme"/>
 
     <item android:id="@+id/sidenav_logout"
         android:title="Log Out"/>

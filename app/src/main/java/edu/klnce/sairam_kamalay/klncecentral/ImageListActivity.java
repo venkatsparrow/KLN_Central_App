@@ -9,7 +9,10 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.ContextMenu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
@@ -81,6 +84,8 @@ public class ImageListActivity extends AppCompatActivity implements NavigationVi
         });
     }
 
+
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (mToggle.onOptionsItemSelected(item)){
@@ -113,7 +118,10 @@ public class ImageListActivity extends AppCompatActivity implements NavigationVi
         else if(item.getItemId() == R.id.canteendetails){
             Intent tocanteen = new Intent(this,Canteen.class);
             startActivity(tocanteen);
+            return true;
         }
         return false;
     }
+
+
 }

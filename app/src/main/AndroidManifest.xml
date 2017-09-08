@@ -21,7 +21,8 @@
         <activity android:name=".ImageListActivity" />
         <activity android:name=".About_us" />
         <activity android:name=".BusSchedule" />
-        <activity android:name=".Canteen"></activity>
+        <activity android:name=".Canteen" />
+        <activity android:name=".SettingsAct"></activity>
     </application>
 
 </manifest>
