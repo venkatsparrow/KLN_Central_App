@@ -20,7 +20,8 @@
         <activity android:name=".Mainpage" />
         <activity android:name=".ImageListActivity" />
         <activity android:name=".About_us" />
-        <activity android:name=".BusSchedule"></activity>
+        <activity android:name=".BusSchedule" />
+        <activity android:name=".Canteen"></activity>
     </application>
 
 </manifest>

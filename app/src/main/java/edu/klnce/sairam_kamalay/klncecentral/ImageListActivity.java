@@ -110,6 +110,10 @@ public class ImageListActivity extends AppCompatActivity implements NavigationVi
             startActivity(tobusschedule);
             return true;
         }
+        else if(item.getItemId() == R.id.canteendetails){
+            Intent tocanteen = new Intent(this,Canteen.class);
+            startActivity(tocanteen);
+        }
         return false;
     }
 }
