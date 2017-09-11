@@ -3,6 +3,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
+<<<<<<< HEAD
     <SearchView
         android:id="@+id/search"
         android:layout_width="fill_parent"
@@ -20,3 +21,22 @@
         />
 
 </RelativeLayout>
+=======
+        <SearchView
+            android:id="@+id/search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:iconifiedByDefault="false">
+
+                <requestFocus />
+        </SearchView>
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/search"
+            />
+
+</RelativeLayout>
+>>>>>>> bd364aa3bc1f48bf517363aaee631bf82b1251e9
