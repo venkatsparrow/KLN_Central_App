@@ -7,10 +7,7 @@ import android.widget.ListView;
 import android.widget.SearchView;
 
 public class Canteen extends AppCompatActivity {
-<<<<<<< HEAD
-=======
     ListView listView;
->>>>>>> bd364aa3bc1f48bf517363aaee631bf82b1251e9
     ArrayAdapter<String> adapter;
 
     String[] canteen={"muta bonda--\t\t price 7rs",
