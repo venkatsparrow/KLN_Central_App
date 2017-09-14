@@ -122,7 +122,6 @@ public class ImageListActivity extends AppCompatActivity implements NavigationVi
             startActivity(tostaffdetails);
             return true;
         }
-
         return false;
     }
 }

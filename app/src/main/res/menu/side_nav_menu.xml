@@ -15,10 +15,7 @@
         android:icon="@drawable/ic_free_breakfast_black_24dp"
         android:title="Canteen"/>
 
-    <item android:id="@+id/sidenav_theme"
-        android:title="Theme"
-        android:icon="@drawable/ic_settings_brightness_black_24dp"
-        />
+
 
     <item android:id="@+id/sidenav_logout"
         android:title="Log Out"

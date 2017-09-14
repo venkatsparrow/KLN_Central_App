@@ -10,21 +10,19 @@ public class Canteen extends AppCompatActivity {
     ListView listView;
     ArrayAdapter<String> adapter;
 
-    String[] canteen={"muta bonda--\t\t price 7rs",
-            "vada--\t\t price 7rs",
-            "tea--\t\t price 10rs",
-            "coffee-- \t\tprice 8rs",
-            "RoseMilk-- \t\tprice 25rs",
-            "serbath--\t\t price 15rs",
-            "egg bread--\t\t price 25rs"};
+    String[] canteen={"muta bonda   --\t\t price 7rs",
+            "Vadai         --\t\t price 7rs",
+            "Tea           --\t\t price 8rs",
+            "Coffee         --\t\t price 8rs",
+            "Masalapoori  --\t\tprice 25rs",
+            "Paanipoori   --\t\t price 25rs",
+            "Egg bread    --\t\t price 25rs"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_canteen);
         ListView listView=(ListView)findViewById(R.id.listview);
-        SearchView searchView=(SearchView)findViewById(R.id.search);
-        searchView.getQuery();
         adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_activated_1,canteen);
         listView.setAdapter(adapter);
 

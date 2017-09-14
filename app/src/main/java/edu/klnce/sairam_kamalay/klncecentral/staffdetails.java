@@ -42,18 +42,51 @@ public class staffdetails extends AppCompatActivity {
     }
 
     private List<ParentObject> initData() {
+        String[] staffdetails = {
+
+                "\nQualification:B.E.(CSE), M.E.(CSE), PH.D.,\n" +
+                "\nExperience:21.8 (Y.M)\n" +
+                "\nEmail ID:alageswaranramaiah@outlook.com\n",
+
+                "\nQualification:B.E. (EEE), M.E. (CSE), PH.D.\n" +
+                "\nExperience:15.10 (Y.M)\n" +
+                "\nEmail ID:ramesh6_2000@yahoo.com\n",
+
+                "\nQualification:B.E.(I&C), M.E.(APPL.ELECS.), PH.D.\n" +
+                "\nExperience:16.7 (Y.M)\n" +
+                "\nEmail ID:ganesh_me@yahoo.com\n",
+
+                "\nQualification:B.E.(CSE) M.E.(CSE)., (PH.D.,)\n" +
+                "\nExperience:19.8 (Y.M)\n" +
+                "\nEmail ID:rckanch@yahoo.co.in\n",
+
+                "\nQualification:B.E.(CSE) M.E.(CSE)., (PH.D.,)\n" +
+                "\nExperience:12.9 (Y.M)\n" +
+                "\nEmail ID:bala172001@yahoo.com\n",
+
+                "\nQualification:B.E.(I.T), M.E.(CSE)\n" +
+                "\nExperience:11.2 (Y.M)\n" +
+                "\nEmail ID:pandian_daniel@yahoo.com\n",
+
+
+                "\nQualification:B.E.(I.T), M.E.(CSE)\n" +
+                "\nExperience:12.9 (Y.M)\n" +
+                "\nEmail ID:selva25x@gmail.com\n"
+        };
+        int i = 0;
         TitleCreator titleCreator  = TitleCreator.get(this);
         List<TitleParent> titles  = titleCreator.getAll();
         List<ParentObject> parentObject =  new ArrayList<>();
-        for (TitleParent title :
+           for (TitleParent title :
                 titles) {
+
             List<Object> childList = new ArrayList<>();
-            childList.add(new TitleChild(" Qualification:B.E.(CSE), M.E.(CSE), PH.D.,\n" +
-                    "\nExperience:21.8 (Y.M)\n" +
-                    "\nEmail ID:alageswaranramaiah@outlook.com","none"));
-            title.setChildObjectList(childList);
+            childList.add(new TitleChild(staffdetails[i]));
+                title.setChildObjectList(childList);
             parentObject.add(title);
+           i++;
         }
+
 
         return parentObject;
     }

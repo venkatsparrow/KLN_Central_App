@@ -22,7 +22,7 @@
         <activity android:name=".About_us" />
         <activity android:name=".BusSchedule" />
         <activity android:name=".Canteen" />
-        <activity android:name=".staffdetails"></activity>
+        <activity android:name=".staffdetails" />
     </application>
 
 </manifest>
