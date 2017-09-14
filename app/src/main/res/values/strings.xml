@@ -21,4 +21,12 @@
     <string name="title_staff_list">staffs</string>
     <string name="title_staff_detail">staff Detail</string>
 
+
+
+    <string name="algates">
+        Qualification:B.E.(CSE), M.E.(CSE), PH.D.,\n
+        Experience:21.8 (Y.M)\n
+        Email ID:alageswaranramaiah@outlook.com
+    </string>
+
 </resources>

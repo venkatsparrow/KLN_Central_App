@@ -117,6 +117,11 @@ public class ImageListActivity extends AppCompatActivity implements NavigationVi
             startActivity(tocanteen);
             return true;
         }
+        else if(item.getItemId() == R.id.sidenav_staff){
+            Intent tostaffdetails = new Intent(this,staffdetails.class);
+            startActivity(tostaffdetails);
+            return true;
+        }
 
         return false;
     }
